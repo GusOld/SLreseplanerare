@@ -1,0 +1,51 @@
+header {
+  padding: 80px 0 100px;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 80px 0 100px;
+  }
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section {
+  padding: 40px 0 400px;
+}
+
+table {
+    border-spacing: 0.5rem;
+}
+
+.close {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: #fff; 
+    opacity: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h2, td, select{
+    color:#007bff;
+}
+

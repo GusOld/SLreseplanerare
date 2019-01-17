@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="scripts/bundle.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <header class="bg-primary text-white">
+        <div class="container text-center">
+            <h1>SL's inOfficiella Reseplanerare</h1>
+            <div style="height: 20px"></div>
+            <div class="col-lg-8 mx-auto">
+                <form class="form-inline justify-content-center mx-auto">
+                    <input id="term" class="form-control mr-sm-2" type="text" placeholder="Ange Hållplats" aria-label="Search">
+                    <button id="sub" class="btn btn-outline-light my-2 my-sm-0 font-weight-bold" type="submit">Sök</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <div class="container column">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <table class="">
+                        <thead class="">
+                            <th>
+                                <h2>Hållplatser</h2>
+                            </th>
+                        </thead>
+                        <tbody>
+                            <td>
+                                <ul id="stops">
+                                </ul>
+                            </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container column">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <h2>Avgångar</h2>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="titles">Avgångstid:</td>
+                                <td class="titles">Slutstation:</td>
+                                <td class="titles d-flex justify-content-start">Fordon:
+                                    <select id="tFilter" class="ml-2">
+                                        <option value="Alla">Alla</option>
+                                        <option value="T-bana">T-bana</option>
+                                        <option value="Buss">Buss</option>
+                                        <option value="Tåg">Tåg</option>
+                                        <option value="Transfer">Transfer</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </thead>
+    
+                        <tbody id="tabel">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
